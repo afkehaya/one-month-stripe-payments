@@ -13,6 +13,9 @@ gem 'pg', group: :production
 # Add 12 factro for Heroku
 gem 'rails_12factor', group: :production 
 
+# Use bootstrap for improting the look and feel
+gem 'bootstrap-sass'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -45,4 +48,7 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+
 
