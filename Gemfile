@@ -13,8 +13,8 @@ gem 'pg', group: :production
 # Add 12 factro for Heroku
 gem 'rails_12factor', group: :production 
 
-# Use bootstrap for improting the look and feel
-gem 'bootstrap-sass', '~> 3.2.0.1'
+# Use bootstrap for improving the look and feel
+gem 'bootstrap-sass' '~> 3.2.0.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
