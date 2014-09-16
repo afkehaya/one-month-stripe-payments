@@ -5,7 +5,7 @@ class ChargesController < ApplicationController
 
 		  customer = Stripe::Customer.create(
 		    :email => params[:stripeEmail],
-		    :card  => params[:stripeToken]
+		    :card  => params[:stripeToken],
 		  )
 
 		  charge = Stripe::Charge.create(
@@ -20,7 +20,7 @@ class ChargesController < ApplicationController
 		    customer_id: customer.id, product_id: 1)
 
 			redirect_to purchase
-		  
+
 		rescue Stripe::CardError => e
 		  flash[:error] = e.message
 		  redirect_to charges_path

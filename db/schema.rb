@@ -14,6 +14,13 @@
 ActiveRecord::Schema.define(version: 20140915195257) do
 
   create_table "purchases", force: true do |t|
+    t.string   "email"
+    t.integer  "amount"
+    t.string   "description"
+    t.string   "currency"
+    t.string   "customer_id"
+    t.string   "card"
+    t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
