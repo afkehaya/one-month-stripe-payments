@@ -10,6 +10,7 @@ gem 'sqlite3', group: [:development, :test]
 #Use postgres as the database in production
 gem 'pg', group: :production
 
+gem 'annotate'
 # Add 12 factro for Heroku
 gem 'rails_12factor', group: :production 
 
