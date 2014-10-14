@@ -1,0 +1,31 @@
+List of products here
+<ul>
+<% @products.each do |product| %>
+	<li><%= product.title %></li>
+<% end %>
+</ul>
+
+
+<section id="products">
+   <div class="product clearfix">
+	<a href="product-detail.html"><div class="product-image-container">
+		<img src="<%= asset_path 'product-growth-hacking.png' %>" alt="product image"/>
+		<span class="product-price">9.99</span>
+	  </div>
+	  <p class="product-title">Growth HAcking</p></a>
+	</div>
+	  <div class="product clearfix">
+	  	<a href="product-detail.html"><div class="product-image-container">
+	  		<img src="<%= asset_path 'product-copywriting.png' %>" alt="product image"/>
+	  		<span class="product-price">49.99</span>
+	  	</div>
+	  	<p clas="product-title">Copywriting</p></a>
+	  </div>
+	 <div class="product clearfix">
+		<a href="product-detail.html"><div class="product-image-container">
+		<img src="<%= asset_path 'product-analytics.png' %>" alt="product image"/>
+		<span class="product-price">49.99</span>
+	  </div>
+	  <p class="product-title">Analytics</p></a>
+	 </div>
+</section>
